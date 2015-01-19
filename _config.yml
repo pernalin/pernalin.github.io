@@ -10,12 +10,12 @@ relative_permalinks: true
 title:            perNalin
 tagline:          'Tech bits and humor bites'
 description:      'Nalin Perera'
-url:              http://hyde.getpoole.com
+url:              http://pernalin.com
 baseurl:          /
 
 author:
   name:           'Nalin Perera'
-  url:            https://twitter.com/mdo
+  url:            https://twitter.com/pernalin
 
 paginate:         5
 
@@ -23,4 +23,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/pernalin
