@@ -9,9 +9,9 @@ Currently, my interests include development using the .NET ecosystem, mobile dev
 
 I live in Connecticut, USA.
 
-## Setup
+## Colophon
 
-Some fun facts about the setup of this site include:
+Some fun facts about this site include:
 
 * Built for [Jekyll](http://jekyllrb.com)
 * Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
