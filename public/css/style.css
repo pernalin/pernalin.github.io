@@ -295,12 +295,8 @@ you can use the generic selector below, but it's slower:
   content: "\e051";
 }
 
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 .feedback-input {
   color:#3c3c3c;
-  font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
   border: 1px solid #6a9fb5;
@@ -381,7 +377,6 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   float:left;
   width: 100%;
   border: #fbfbfb solid 4px;
