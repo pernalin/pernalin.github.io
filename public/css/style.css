@@ -8,11 +8,11 @@ html {
 
 @font-face {
   font-family: 'Modern-UI-Icons---Social';
-  src:url('public/fonts/Modern-UI-Icons---Social.eot');
-  src:url('public/fonts/Modern-UI-Icons---Social.eot?#iefix') format('embedded-opentype'),
-  url('public/fonts/Modern-UI-Icons---Social.woff') format('woff'),
-  url('public/fonts/Modern-UI-Icons---Social.ttf') format('truetype'),
-  url('public/fonts/Modern-UI-Icons---Social.svg#Modern-UI-Icons---Social') format('svg');
+  src:url('../fonts/Modern-UI-Icons---Social.eot');
+  src:url('../fonts/Modern-UI-Icons---Social.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Modern-UI-Icons---Social.woff') format('woff'),
+  url('../fonts/Modern-UI-Icons---Social.ttf') format('truetype'),
+  url('../fonts/Modern-UI-Icons---Social.svg#Modern-UI-Icons---Social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
