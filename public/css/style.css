@@ -303,7 +303,8 @@ you can use the generic selector below, but it's slower:
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
-  border-radius: 0;
+  border: 1px solid #6a9fb5;
+  color: #6a9fb5;
   line-height: 22px;
   background-color: #fbfbfb;
   padding: 13px 13px 13px 54px;
@@ -360,7 +361,7 @@ you can use the generic selector below, but it's slower:
   background-repeat: no-repeat;
 }
 
-#comment{
+#message{
   background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
