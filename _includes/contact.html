@@ -1,10 +1,17 @@
 <form action="https://getsimpleform.com/messages?form_api_token=03a2f679c35506db90b9a67aa6aed7fd" method="post">
     <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
     <input type='hidden' name='redirect_to' value='http://pernalin.com>' />
-    <!-- all your input fields here.... -->
-    <input type='text' name='name' />
-    <input type='email' name='email' />
-    <textarea name="message" />
-
-    <input type='submit' value='Contact Form' />
+    <label for='name'>Name</label>
+    <br />
+    <input type='text' id='name' name='name' placeholder='Your Name' />
+    <br />
+    <label for='email'>Email</label>
+    <br />
+    <input type='text' id='email' name='email' placeholder='Your Email' />
+    <br />
+    <label for='email'>Message</label>
+    <br />
+    <textarea id='message' name='message' placeholder='Message' rows='8' cols='50'></textarea>
+    <br />
+    <input type='submit' value='Submit' />
 </form>
