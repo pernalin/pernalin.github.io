@@ -311,41 +311,25 @@ textarea:focus {
   outline: 0;
 }
 
-/* Buttons */
 
-button,
-.contributor-posts-link,
-input[type="button"],
-input[type="reset"],
+/* Buttons */
 input[type="submit"] {
   background-color: #6a9fb5;
   border: 0;
   border-radius: 2px;
   color: #fff;
-  font-size: 12px;
-  font-weight: 700;
   padding: 10px 30px 11px;
   text-transform: uppercase;
   vertical-align: bottom;
+  width: 100px;
 }
 
-button:hover,
-button:focus,
-.contributor-posts-link:hover,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
   background-color: #6a9fb5;
   color: #fff;
 }
 
-button:active,
-.contributor-posts-link:active,
-input[type="button"]:active,
-input[type="reset"]:active,
 input[type="submit"]:active {
-  background-color: #55d737;
+  background-color: #6a9fb5;
 }
