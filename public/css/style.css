@@ -340,7 +340,7 @@ you can use the generic selector below, but it's slower:
   background-repeat: no-repeat;
 }
 
-#comment{
+#message{
   background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
