@@ -409,7 +409,6 @@ you can use the generic selector below, but it's slower:
     border-radius: 4px 0 0 4px;
     display: inline-block;
     font-size: 18px;
-    font-weight: 500;
     line-height: 22px;
     margin-right: -1px;
     padding: 7px 5px 8px 5px;
