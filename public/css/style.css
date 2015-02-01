@@ -302,7 +302,7 @@ you can use the generic selector below, but it's slower:
   border: 1px solid #ccc;
   line-height: 22px;
   background-color: #fbfbfb;
-  padding: 13px 13px 13px 54px;
+  padding: 13px;
   margin-bottom: 10px;
   width:100%;
 }
@@ -323,7 +323,6 @@ you can use the generic selector below, but it's slower:
 
 /* Icons ---------------------------------- */
 .input-prepend {
-  display: inline-block;
   margin-bottom: 10px;
   font-size: 0;
   white-space: nowrap;
@@ -360,21 +359,19 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
-  float:left;
-  width: 100%;
   border: #fbfbfb solid 4px;
   cursor:pointer;
   background-color: #6a9fb5;
   color:white;
   font-size:24px;
-  padding-top:22px;
-  padding-bottom:22px;
+  padding:22px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
   float: right;
+  margin-right: -44px;
 }
 
 #button-blue:hover{
