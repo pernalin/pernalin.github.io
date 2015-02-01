@@ -442,13 +442,12 @@ input:focus, textarea:focus {
     cursor: pointer;
     background-color: #6a9fb5;
     color: white;
-    font-size: 24px;
-    padding: 22px;
+    font-size: 22px;
+    padding: 12px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
+    font-weight: 500;
     float: right;
     margin-right: -44px;
 }
