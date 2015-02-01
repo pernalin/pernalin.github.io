@@ -390,6 +390,7 @@ you can use the generic selector below, but it's slower:
     margin-bottom: 10px;
     padding: 8px;
     width: 100%;
+    -webkit-appearance: none;
 }
 
 .feedback-input:focus {
@@ -421,9 +422,10 @@ you can use the generic selector below, but it's slower:
 textarea {
     font-family: "source-sans-pro", sans-serif;
     height: 150px;
-    line-height: 150%;
+    line-height: 22px;
     resize: vertical;
     width: 100%;
+    -webkit-appearance: none;
 }
 
 input:hover, textarea:hover,
