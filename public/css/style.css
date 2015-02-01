@@ -419,6 +419,10 @@ you can use the generic selector below, but it's slower:
     text-shadow: 0 1px 0 #ffffff;
 }
 
+.input-addon v-align {
+    vertical-align: top;
+}
+
 textarea {
     font-family: "source-sans-pro", sans-serif;
     height: 150px;
