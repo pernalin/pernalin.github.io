@@ -414,7 +414,7 @@ you can use the generic selector below, but it's slower:
     font-size: 18px;
     line-height: 22px;
     margin-right: -1px;
-    padding: 8px 5px;
+    padding: 7px 5px 9px 5px;
     text-align: center;
     text-shadow: 0 1px 0 #ffffff;
 }
