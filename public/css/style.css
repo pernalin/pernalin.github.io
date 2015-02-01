@@ -326,6 +326,7 @@ you can use the generic selector below, but it's slower:
 }
 
 /* Icons ---------------------------------- */
+.ci
 #name{
   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
   background-size: 30px 30px;
