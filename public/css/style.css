@@ -387,7 +387,7 @@ you can use the generic selector below, but it's slower:
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
-    padding: 8px;
+    padding: 8px 8px 9px 8px;
     width: 100%;
     -webkit-appearance: none;
     -webkit-border-radius: 0;
