@@ -299,22 +299,18 @@ you can use the generic selector below, but it's slower:
   color:#3c3c3c;
   font-weight:500;
   font-size: 18px;
-  border: 1px solid #6a9fb5;
+  border: 1px solid #ccc;
   line-height: 22px;
   background-color: #fbfbfb;
   padding: 13px 13px 13px 54px;
   margin-bottom: 10px;
   width:100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .feedback-input:focus{
   background: #fff;
   box-shadow: 0;
-  border: 3px solid #3498db;
+  border: 1px solid #3498db;
   color: #3498db;
   outline: none;
   padding: 13px 13px 13px 54px;
@@ -329,7 +325,6 @@ you can use the generic selector below, but it's slower:
 .input-prepend {
   display: inline-block;
   margin-bottom: 10px;
-  vertical-align: middle;
   font-size: 0;
   white-space: nowrap;
 }
@@ -340,36 +335,16 @@ you can use the generic selector below, but it's slower:
   vertical-align: top;
   display: inline-block;
   width: auto;
-  height: 20px;
+  height: 50px;
   min-width: 16px;
-  padding: 4px 5px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
+  padding: 10px 5px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
   text-align: center;
   text-shadow: 0 1px 0 #ffffff;
   background-color: #eeeeee;
   border: 1px solid #ccc;
-}
-#names{
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
-
-#email{
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
-
-#message{
-  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
 }
 
 textarea {
