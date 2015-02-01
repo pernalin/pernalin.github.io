@@ -391,6 +391,7 @@ you can use the generic selector below, but it's slower:
     padding: 8px;
     width: 100%;
     -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 .feedback-input:focus {
@@ -426,6 +427,7 @@ textarea {
     resize: vertical;
     width: 100%;
     -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 input:hover, textarea:hover,
