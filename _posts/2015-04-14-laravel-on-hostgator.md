@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting up Laravel on Hostgator
+title: Installing Laravel on Hostgator
 ---
 
 Have you developed a site using Laravel, and are now ready to deploy it? One way is to use a 
@@ -29,7 +29,7 @@ link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keyi
 
 Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
 
-{% highlight console %}
+{% highlight console bg:dark %}
 username@domain [~]# php -v
 PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 {% endhighlight %}  
