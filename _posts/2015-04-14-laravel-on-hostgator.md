@@ -31,12 +31,14 @@ link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keyi
 Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
 
 {% highlight bash %}
-    username@domain [~]# php -v
-    PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
+username@domain [~]# php -v
+PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 {% endhighlight %}  
 
 ### Install Composer
-    username@domain [~]# curl -sS https://getcomposer.org/installer | php
+{% highlight bash %}
+username@domain [~]# curl -sS https://getcomposer.org/installer | php
+{% endhighlight %}  
 
 ### Install Laravel
 Install the right version of Laravel on your Host. If you don't know which version you have in Dev, use `php artisan 
@@ -44,11 +46,15 @@ Install the right version of Laravel on your Host. If you don't know which versi
 
 On the PuTTY terminal enter the following to install the latest Laravel version, or specify a particular version number.
 
-    username@domain [~]# composer create-project laravel/laravel --prefer-dist
-    OR
-    username@domain [~]# composer create-project laravel/laravel=4.2 --prefer-dist
+{% highlight bash %}
+username@domain [~]# composer create-project laravel/laravel --prefer-dist
+OR
+username@domain [~]# composer create-project laravel/laravel=4.2 --prefer-dist
+{% endhighlight %}  
 
 
 
 ### To remove a Laravel installation simply delete the Laravel folder
-    pernalin@diff-y.com [~]# rm -r laravel
+{% highlight bash %}
+pernalin@diff-y.com [~]# rm -r laravel
+{% endhighlight %}  
