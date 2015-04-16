@@ -16,13 +16,13 @@ Name or IP Address ready. Just log in to HostGator's CPanel to find it.
 
 PuTTY Configuration
 
-*    Session:
-     > Host Name (or IP Address): Your domain name, or IP
-     > Port: Default is 22, but if you use a shared instance try 2222
-     > Connection type: SSH
-*    Connection: Data
-     > Auto-login username: Your HostGator user name
-
+*    Session:  
+     > Host Name (or IP Address): Your domain name, or IP  
+     > Port: Default is 22, but if you use a shared instance try 2222  
+     > Connection type: SSH  
+*    Connection: Data  
+     > Auto-login username: Your HostGator user name  
+     
 I left the default settings for everything else. If the above doesn't work and you need more info check out [this 
 link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux)
 
@@ -30,7 +30,10 @@ link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keyi
 
 Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
 
+{% highlight bash %}
     username@domain [~]# php -v
+    PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
+{% endhighlight %}  
 
 ### Install Composer
     username@domain [~]# curl -sS https://getcomposer.org/installer | php
