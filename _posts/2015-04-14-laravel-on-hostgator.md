@@ -15,12 +15,12 @@ I use [PuTTY](http://www.putty.org/) to SSH into Hostgator. You'll need to have 
 Name or IP Address ready. Just log in to HostGator's CPanel to find it.
 
 PuTTY Configuration
-Session:
-- Host Name (or IP Address): The address you got above
-- Port: Default is 22, but if you use a shared instance try 2222
-- Connection type: SSH
-Connection: Data
-- Auto-login username: Your HostGator user name
+*    Session:
+     > Host Name (or IP Address): The address you got above
+     > Port: Default is 22, but if you use a shared instance try 2222
+     > Connection type: SSH
+*    Connection: Data
+     > Auto-login username: Your HostGator user name
 
 I left the default settings for everything else.
 
