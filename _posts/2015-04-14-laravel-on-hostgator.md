@@ -3,7 +3,7 @@ layout: post
 title: Setting up Laravel on Hostgator
 ---
 
-Have you developed a site using Laravel, and are now read to deploy it? One way is to use a 
+Have you developed a site using Laravel, and are now ready to deploy it? One way is to use a 
 hosting service already configured for Laravel such as [fortrabbit](http://www.fortrabbit.com/) or [Laravel Forge](https://forge.laravel.com/) with [Digital Ocean](https://www.digitalocean.com/).
 
 On the other hand, if you're like me and already have a hosting provider such as HostGator you may just wish to setup 
@@ -12,17 +12,16 @@ account.
 
 ### Connect to your HostGator terminal. 
 I use [PuTTY](http://www.putty.org/) to SSH into Hostgator. You'll need to have your Host 
-Name or IP Address ready. Just log in to HostGator's CPanel to find it.
+Name or IP Address ready. If you don't have this already, log in to HostGator's CPanel to find it.
 
-PuTTY Configuration
-
+PuTTY Configuration  
 *    Session:  
-     > Host Name (or IP Address): Your domain name, or IP  
-     > Port: Default is 22, but if you use a shared instance try 2222  
+     > Host Name (or IP Address): Your domain name, or IP    
+     > Port: Default is 22, but if you use a shared instance try 2222    
      > Connection type: SSH  
 *    Connection: Data  
      > Auto-login username: Your HostGator user name  
-     
+
 I left the default settings for everything else. If the above doesn't work and you need more info check out [this 
 link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux)
 
@@ -42,7 +41,7 @@ username@domain [~]# curl -sS https://getcomposer.org/installer | php
 
 ### Install Laravel
 Install the right version of Laravel on your Host. If you don't know which version you have in Dev, use `php artisan 
---version` to find find out.
+--version` to find out.
 
 On the PuTTY terminal enter the following to install the latest Laravel version, or specify a particular version number.
 
@@ -53,8 +52,7 @@ username@domain [~]# composer create-project laravel/laravel=4.2 --prefer-dist
 {% endhighlight %}  
 
 
-
 ### To remove a Laravel installation simply delete the Laravel folder
 {% highlight bash %}
 pernalin@diff-y.com [~]# rm -r laravel
-{% endhighlight %}  
+{% endhighlight %}
