@@ -35,8 +35,15 @@ PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 {% endhighlight %}  
 
 ### Install Composer
-{% highlight bash %}
+While you don't have to do this, i.e. you could simply copy your local Laravel folder, having Composer makes it much 
+easier to install Laravel and any related packages.
+
+{% highlight console %}
 username@domain [~]# curl -sS https://getcomposer.org/installer | php
+All settings correct for using Composer
+Downloading...
+Composer successfully installed to: /home1/pernalin/composer.phar
+Use it: php composer.phar
 {% endhighlight %}  
 
 ### Install Laravel
@@ -45,14 +52,31 @@ Install the right version of Laravel on your Host. If you don't know which versi
 
 On the PuTTY terminal enter the following to install the latest Laravel version, or specify a particular version number.
 
-{% highlight bash %}
+{% highlight console %}
 username@domain [~]# composer create-project laravel/laravel --prefer-dist
 OR
 username@domain [~]# composer create-project laravel/laravel=4.2 --prefer-dist
 {% endhighlight %}  
 
+If Composer is able to find the particular version you wish to install you should start to see the results of the 
+installation. 
+{% highlight console %}
+Installing laravel/laravel (v4.2.0)
+  - Installing laravel/laravel (v4.2.0)
+    Downloading: 100%
+Created project in /home1/username/laravel
+Loading composer repositories with package information
+Installing dependencies (including require-dev)
+      - Installing symfony/translation (v2.5.11)
+        Downloading: 100%
+        ...
+        ...
+Application key [XXX] set successfully.
+{% endhighlight %} 
 
 ### To remove a Laravel installation simply delete the Laravel folder
-{% highlight bash %}
-pernalin@diff-y.com [~]# rm -r laravel
+If you installed the wrong version, or you need to get rid of Laravel simply delete the folder and its content.
+
+{% highlight console %}
+username@domain [~]# rm -r laravel
 {% endhighlight %}
