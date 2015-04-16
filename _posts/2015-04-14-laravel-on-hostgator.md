@@ -10,7 +10,7 @@ On the other hand, if you're like me and already have a hosting provider such as
 Laravel there. It's fairly simple. Below are the steps I followed to setup Laravel on my HostGator 
 account.
 
-# Connect to your HostGator terminal. 
+## Connect to your HostGator terminal. 
 I use PuTTY (http://www.putty.org/) to SSH into Hostgator. You'll need to find your Host 
 Name or IP Address. Just log in to CPanel to find it.
 
@@ -24,7 +24,7 @@ Connection: Data
 
 I left the default settings for everything else.
 
-# Check PHP version
+## Check PHP version
 
 Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
 ```
@@ -32,13 +32,13 @@ Once connected, check PHP version of your hosted instance. You'll need to have a
 username@domain [~]# php -v
 ```
 
-# Install Composer
+## Install Composer
 ```
 #!cmd
 username@domain [~]# curl -sS https://getcomposer.org/installer | php
 ```
 
-# Install Laravel
+## Install Laravel
 Install the right version of Laravel on your Host. If you don't know which version you have in Dev, use php artisan 
 --version to find find out.
 
@@ -51,7 +51,7 @@ username@domain [~]# composer create-project laravel/laravel=4.2 --prefer-dist
 ```
 
 
-# To remove a Laravel installation simply delete the Laravel folder
+## To remove a Laravel installation simply delete the Laravel folder
 ```
 #!cmd
 pernalin@diff-y.com [~]# rm -r laravel
