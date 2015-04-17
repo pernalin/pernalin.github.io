@@ -3,18 +3,25 @@ layout: post
 title: Installing Laravel on Hostgator
 ---
 
-Have you developed a site using Laravel, and are now ready to deploy it? One way is to use a 
-hosting service already configured for Laravel such as [fortrabbit](http://www.fortrabbit.com/) or [Laravel Forge](https://forge.laravel.com/) with [Digital Ocean](https://www.digitalocean.com/).
+Have you developed a site using Laravel, and are now getting ready to deploy it? One of the first things to 
+consider is where to host your site, and make sure that hosting provider supports the minimum [server requirements]
+(http://laravel.com/docs/4.2#server-requirements) for Laravel.
 
-On the other hand, if you're like me and already have a hosting provider such as HostGator you may just wish to setup 
-Laravel there. It's fairly simple. Below are the steps I followed to setup Laravel on my HostGator 
-account.
+The instructions below are specific to installing Laravel on a Hostgator shared server. However, this shouldn't be 
+too different even if you use a different hosting provider.
 
-### Connect to your HostGator terminal. 
-I use [PuTTY](http://www.putty.org/) to SSH into Hostgator. You'll need to have your Host 
-Name or IP Address ready. If you don't have this already, log in to HostGator's CPanel to find it.
+### Signup for a Web Hosting Service
+I've assumed that you have already signed up for a hosting account. If you don't, then go ahead and get 
+one! Here's a link to [HostGator](http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=). You 
+can also use the coupone code: DeployQuick to get a discount.
+
+### Connect to your hosting account terminal
+You can use any SSH client to access your hosting service account terminal. In my case I use [PuTTY](http://www
+.putty.org/). You'll also need the server IP Address ready. If you don't have this already, browse over to 
+your HostGator's CPanel to find it.
 
 PuTTY Configuration  
+
 *    Session:  
      > Host Name (or IP Address): Your domain name, or IP    
      > Port: Default is 22, but if you use a shared instance try 2222    
@@ -22,21 +29,22 @@ PuTTY Configuration
 *    Connection: Data  
      > Auto-login username: Your HostGator user name  
 
-I left the default settings for everything else. If the above doesn't work and you need more info check out [this 
+I left the default settings for everything else. If the above doesn't work and you need more help check out [this 
 link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux)
 
 ### Check PHP version
 
-Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
+Once connected, check the PHP version of your hosted instance. You'll need to have at least [PHP 5.4](http://laravel
+.com/docs/4.2#server-requirements) to install Laravel. 
 
-{% highlight console lineos %}
+{% highlight console %}
 username@domain [~]# php -v
 PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 {% endhighlight %}  
 
 ### Install Composer
-While you don't have to do this, i.e. you could simply copy your local Laravel folder, having Composer makes it much 
-easier to install Laravel and any related packages.
+While you don't have to do this, i.e. you could simply copy your local Laravel folder, or clone laravel using Git, 
+having Composer makes it much easier to install Laravel and its related packages.
 
 {% highlight console %}
 username@domain [~]# curl -sS https://getcomposer.org/installer | php
@@ -47,19 +55,22 @@ Use it: php composer.phar
 {% endhighlight %}  
 
 ### Install Laravel
-Install the right version of Laravel on your Host. If you don't know which version you have in Dev, use `php artisan 
---version` to find out.
+Install the right version of Laravel on your Host. If you don't know which Laravel version you have in Dev, use `php 
+artisan --version` on your local dev console to find out.
 
-On the PuTTY terminal enter the following to install the latest Laravel version, or specify a particular version number.
+On the PuTTY terminal enter the following command to install. Make sure you replace <version number> with the required Laravel version. E.g. `laravel/laravel=*4.2* --prefer-dist`
 
 {% highlight console %}
-username@domain [~]# composer create-project laravel/laravel --prefer-dist
-OR
-username@domain [~]# composer create-project laravel/laravel=4.2 --prefer-dist
+username@domain [~]# php composer.phar create-project laravel/laravel=<version number> --prefer-dist
 {% endhighlight %}  
 
-If Composer is able to find the particular version you wish to install you should start to see the results of the 
-installation. 
+In case you don't specify a version number, composer will install the latest available.
+{% highlight console %}
+username@domain [~]# php composer.phar create-project laravel/laravel --prefer-dist
+{% endhighlight %}  
+
+If Composer is able to find the particular version you wish to install you will begin to see the installation 
+start.
 {% highlight console %}
 Installing laravel/laravel (v4.2.0)
   - Installing laravel/laravel (v4.2.0)
@@ -74,8 +85,9 @@ Installing dependencies (including require-dev)
 Application key [XXX] set successfully.
 {% endhighlight %} 
 
-### To remove a Laravel installation simply delete the Laravel folder
-If you installed the wrong version, or you need to get rid of Laravel simply delete the folder and its content.
+### To remove a Laravel installation
+If you installed the wrong version, or you need to get rid of Laravel simply delete the Laravel folder and its 
+content from your hosting site.
 
 {% highlight console %}
 username@domain [~]# rm -r laravel
