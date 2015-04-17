@@ -13,7 +13,7 @@ too different even if you use a different hosting provider.
 ### Signup for a Web Hosting Service
 I've assumed that you have already signed up for a hosting account. If you don't, then go ahead and get 
 one! Here's a link to [HostGator](http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=). You 
-can also use the coupone code: DeployQuick to get a discount.
+can also use the coupone code: *QuickDeploy* to get a discount.
 
 ### Connect to your hosting account terminal
 You can use any SSH client to access your hosting service account terminal. In my case I use [PuTTY](http://www
