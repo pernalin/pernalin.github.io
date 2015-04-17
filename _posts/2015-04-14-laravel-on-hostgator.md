@@ -27,9 +27,9 @@ link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keyi
 
 ### Check PHP version
 
-1Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
+Once connected, check PHP version of your hosted instance. You'll need to have at least PHP 5.2 to install Laravel.
 
-{% highlight console darkbg lineos %}
+{% highlight console lineos %}
 username@domain [~]# php -v
 PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 {% endhighlight %}  
