@@ -10,14 +10,14 @@ consider is where to host your site, and make sure that hosting provider support
 The instructions below are specific to installing Laravel on a Hostgator shared server. However, this shouldn't be 
 too different even if you use a different hosting provider.
 
-### Signup for a Web Hosting Service
-I've assumed that you have already signed up for a hosting account. If you don't, then go ahead and get 
+### Sign up for a Web Hosting Service
+I've assumed that you already have a hosting account. If you don't, then go ahead and get 
 one! Here's a link to [HostGator](http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=). You 
-can also use the coupone code: *QuickDeploy* to get a discount.
+can also use the coupon code: **QuickDeploy** to get a discount.
 
 ### Connect to your hosting account terminal
-You can use any SSH client to access your hosting service account terminal. In my case I use [PuTTY](http://www
-.putty.org/). You'll also need the server IP Address ready. If you don't have this already, browse over to 
+Once you have a hosting account, you'll need to access its terminal. You can use any SSH client to do so. In my 
+case I use [PuTTY](http://www.putty.org/). You'll also need the server IP Address ready. If you don't have this already, browse over to 
 your HostGator's CPanel to find it.
 
 PuTTY Configuration  
@@ -27,7 +27,7 @@ PuTTY Configuration
      > Port: Default is 22, but if you use a shared instance try 2222    
      > Connection type: SSH  
 *    Connection: Data  
-     > Auto-login username: Your HostGator user name  
+     > Auto-login username: Your HostGator username  
 
 I left the default settings for everything else. If the above doesn't work and you need more help check out [this 
 link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux)
@@ -43,10 +43,10 @@ PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 {% endhighlight %}  
 
 ### Install Composer
-While you don't have to do this, i.e. you could simply copy your local Laravel folder, or clone laravel using Git, 
-having Composer makes it much easier to install Laravel and its related packages.
+While you don't have to do this, i.e. you could just copy your local Laravel folder, or clone using Git, 
+but having Composer makes it much easier to install Laravel and its related packages.
 
-{% highlight console %}
+{% highlight console %}requested
 username@domain [~]# curl -sS https://getcomposer.org/installer | php
 All settings correct for using Composer
 Downloading...
@@ -69,8 +69,7 @@ In case you don't specify a version number, composer will install the latest ava
 username@domain [~]# php composer.phar create-project laravel/laravel --prefer-dist
 {% endhighlight %}  
 
-If Composer is able to find the particular version you wish to install you will begin to see the installation 
-start.
+If Composer is able to find the requested version, it will begin the install.
 {% highlight console %}
 Installing laravel/laravel (v4.2.0)
   - Installing laravel/laravel (v4.2.0)
@@ -86,7 +85,7 @@ Application key [XXX] set successfully.
 {% endhighlight %} 
 
 ### To remove a Laravel installation
-If you installed the wrong version, or you need to get rid of Laravel simply delete the Laravel folder and its 
+If you installed the wrong version, or you need to get rid of Laravel just delete the Laravel folder and its 
 content from your hosting site.
 
 {% highlight console %}
