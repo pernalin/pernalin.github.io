@@ -7,13 +7,11 @@ This blog is built on Jekyll/Hyde and is hosted on Github Pages. With the upcomi
 results for mobile devices I was curious about the score for my blog.
 
 As it turns out, the initial score wasn't too bad.  
--------------------------------
+
 |Mobile|Desktop|
--------------------------------
+|------|-------|
 |Speed: 77/100|Overall: 90/100|
--------------------------------
 |User Experience: 97/100|     |
--------------------------------
 
 But I was after perfection.
 
@@ -70,4 +68,12 @@ links. So adding some padding sorted it out.
     padding: 5px 0;
 }
 {% endhighlight %}
+
+*** Leverage browser caching
+
+This was the only issue I couldn't fix.  My site is hosted on Github Pages, and it's not possible to configure 
+browser cacheing.
+
+*** Final results
+
 
