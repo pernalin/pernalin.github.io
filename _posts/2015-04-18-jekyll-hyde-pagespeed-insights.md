@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PageSpeed Insights Scoring for Jekyll Github Pages
+title: PageSpeed Insights for Jekyll Github Pages
 ---
 
 This blog is built on Jekyll/Hyde and is hosted on Github Pages. With the upcoming scoring change on Google Search 
@@ -18,8 +18,8 @@ These were the initial findings
 
 ### Render-blocking JavaScript  
 
-This was easy enough to fix.  In my case I had the default embed code for a Typekit font. As it happens they 
-also provide an asynchronous code snippet to load their fonts. For more info refer to Typekit's 
+This was easy enough to fix.  In my case I had used the default embed code for a Typekit font. As it happens they 
+also provide an asynchronous version. For more info refer to Typekit's 
 support article on [Embed Code](http://help.typekit.com/customer/portal/articles/649336).
 
 I didn't bother with controlling FOUT (the Flash of Unstyled Text), but if you're inclined to do so, they have more 
@@ -47,14 +47,14 @@ script below.
 {% endhighlight %}
 
 While this fixed the original issue (optimizing css delivery) it introduced another one.  PageSpeed Insights does its
- analysis *before* the asynchronously loaded css is loaded. So, it reported several 'user experience' issues related 
- to not having the CSS loaded.  The issues it reported were clearly fixed in the live site, but I was after the 
+ analysis *before* the asynchronously loaded css is available. So, it reported several new 'user experience' issues
+ . The issues it reported were clearly fixed in the live site, but I was after the 
  perfect score. So I ended up with an ugly hack by inlining a few CSS snippets within the page template `\_includes\head
- .html` so that it's picked up by Pagespeed Insights.
+ .html` to address the new issues reported by Pagespeed Insights.
  
 ### Minifying CSS
 
-I had four CSS files that I concatanated and then minified using the [YUI Compressor](https://yui.github
+I concatanated my css files in to one file and then minified it using the [YUI Compressor](https://yui.github
 .io/yuicompressor/)
 
 ### Sizing Tap Targets Appropriately
@@ -71,8 +71,8 @@ links. So adding some padding sorted it out.
 
 ### Leverage browser caching
 
-This was the only issue I couldn't fix.  My site is hosted on Github Pages, and it's not possible to configure 
-browser cacheing.
+This was the only issue I couldn't fix.  My site is hosted on Github Pages, and at this point it's not possible to 
+configure Github Pages for browser cacheing.
 
 ### The Final results
 
