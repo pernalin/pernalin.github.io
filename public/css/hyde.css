@@ -73,6 +73,7 @@ html {
 /* Sidebar links */
 .sidebar a {
     color: #fff;
+    padding: 5px;
 }
 
 /* About section */
