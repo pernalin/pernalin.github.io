@@ -7,29 +7,29 @@ Have you developed a site using Laravel, and are now getting ready to deploy it?
 consider is where to host your site, and make sure that hosting provider supports the minimum [server requirements]
 (http://laravel.com/docs/4.2#server-requirements) for Laravel.
 
-The instructions below are specific to installing Laravel on a Hostgator shared server. However, this shouldn't be 
-too different even if you use a different hosting provider.
+The instructions below are specific to installing Laravel on a Hostgator shared instance. However, this shouldn't be 
+too different even if you're using a different hosting provider.
 
 ### Sign up for a Web Hosting Service
-I've assumed that you already have a hosting account. If you don't, then go ahead and get 
-one! Here's a link to [HostGator](http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=). You 
-can also use the coupon code: **QuickDeploy** to get a discount.
+If you don't already have a Hosting account, now is the time to get one! Here's a link to [HostGator]
+(http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=) along with a discount coupon code 
+**QuickDeploy** to get you started!
 
 ### Connect to your hosting account terminal
 Once you have a hosting account, you'll need to access its terminal. You can use any SSH client to do so. In my 
-case I use [PuTTY](http://www.putty.org/). You'll also need the server IP Address ready. If you don't have this already, browse over to 
-your HostGator's CPanel to find it.
+case I use [PuTTY](http://www.putty.org/). You'll also need the server IP Address ready. If you don't have this 
+already, browse over to your Hosting Service Account or CPanel to find it.
 
 PuTTY Configuration  
 
 *    Session:  
-     > Host Name (or IP Address): Your domain name, or IP    
-     > Port: Default is 22, but if you use a shared instance try 2222    
-     > Connection type: SSH  
+     > Host Name (or IP Address): *Your domain name, or IP*   
+     > Port: *Default is 22, but if you use a shared instance try 2222*    
+     > Connection type: *SSH*  
 *    Connection: Data  
-     > Auto-login username: Your HostGator username  
+     > Auto-login username: *Your HostGator username*  
 
-I left the default settings for everything else. If the above doesn't work and you need more help check out [this 
+I used default settings for everything else. If the above doesn't work and you need more help check out [this 
 link](https://support.hostgator.com/articles/specialized-help/technical/ssh-keying-through-putty-on-windows-or-linux)
 
 ### Check PHP version
@@ -44,7 +44,7 @@ PHP 5.4.38 (cli) (built: Mar 11 2015 12:43:38)
 
 ### Install Composer
 While you don't have to do this, i.e. you could just copy your local Laravel folder, or clone using Git, 
-but having Composer makes it much easier to install Laravel and its related packages.
+having Composer makes it much easier to install Laravel and its related packages.
 
 {% highlight console %}requested
 username@domain [~]# curl -sS https://getcomposer.org/installer | php
@@ -58,13 +58,14 @@ Use it: php composer.phar
 Install the right version of Laravel on your Host. If you don't know which Laravel version you have in Dev, use `php 
 artisan --version` on your local dev console to find out.
 
-On the PuTTY terminal enter the following command to install. Make sure you replace <version number> with the required Laravel version. E.g. `laravel/laravel=*4.2* --prefer-dist`
+On the PuTTY terminal enter the following command to install. Make sure you replace 'version number' with the 
+required Laravel version. E.g. `laravel/laravel=**4.2** --prefer-dist`
 
 {% highlight console %}
 username@domain [~]# php composer.phar create-project laravel/laravel=<version number> --prefer-dist
 {% endhighlight %}  
 
-In case you don't specify a version number, composer will install the latest available.
+If you don't specify a version number, composer will install the latest distribution.
 {% highlight console %}
 username@domain [~]# php composer.phar create-project laravel/laravel --prefer-dist
 {% endhighlight %}  
