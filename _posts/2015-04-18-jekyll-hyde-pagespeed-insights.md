@@ -8,14 +8,14 @@ results for mobile devices I was curious about the score for my blog.
 
 As it turns out, the initial score wasn't too bad.  
 
-|Mobile|Desktop|
-|------|-------|
-|Speed: 77/100|Overall: 90/100|
-|User Experience: 97/100|     |
+* Mobile    
+    * Speed: 77/100
+    * User Experience: 97/100     |
+* Desktop  
+    * Overall: 90/100
 
 But I was after perfection.
 
-The issues were centered on
 *** Render-blocking JavaScript  
 
 This was easy enough to fix.  In my case I had the default embed code for a Typekit font. As it happens they 
@@ -74,6 +74,11 @@ links. So adding some padding sorted it out.
 This was the only issue I couldn't fix.  My site is hosted on Github Pages, and it's not possible to configure 
 browser cacheing.
 
-*** Final results
+*** The Final results
 
+* Mobile    
+    * Speed: 97/100 (+20 points)
+    * User Experience: 100/100 (+3 points)
+* Desktop  
+    * Overall: 98/100 (+8 points)
 
