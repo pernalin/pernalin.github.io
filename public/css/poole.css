@@ -153,7 +153,7 @@ abbr[title] {
 code,
 pre {
     font-family: Menlo, Monaco, "Courier New", monospace;
-    white-space: pre-wrap; /* force long lines to break */
+    white-space: pre-wrap !important;/* force long lines to break */
 }
 code {
     padding: .25em .5em;
