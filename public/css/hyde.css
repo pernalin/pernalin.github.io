@@ -58,7 +58,6 @@ html {
  */
 
 .sidebar {
-    display: none; /* Hide for mobile, show later */
     text-align: center;
     padding: 2rem 1rem;
     color: rgba(255,255,255,.5);
@@ -85,7 +84,6 @@ html {
 /* Sidebar links */
 .sidebar a {
     color: #fff;
-    padding: 5px;
 }
 
 /* About section */
