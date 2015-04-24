@@ -3,33 +3,40 @@
 
 {% include head.html %}
 
-  <body class="theme-base-0d">
-  <div class="container-fluid">
-      <div class="row">
-          {% include sidebar.html %}
-          <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main content container">
-              {{ content }}
-          </div>
-      </div>
-  </div>
-    <!-- CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<body class="theme-base-0d">
+<div class="container-fluid">
+    <div class="row">
+        {% include sidebar.html %}
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main content container">
+            {{ content }}
+        </div>
+    </div>
+</div>
+<!-- CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/new.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ site.baseurl }}public/css/new.css">
+<link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
+<link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
+<link rel="stylesheet" href="{{ site.baseurl }}public/css/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
 
-    <script>
-        var cb = function() {
-            var l = document.createElement('link'); l.rel = 'stylesheet';
-            l.href = '{{ site.baseurl }}public/css/styles.min.css';
-            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-        };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-                webkitRequestAnimationFrame || msRequestAnimationFrame;
-        if (raf) raf(cb);
-        else window.addEventListener('load', cb);
-    </script>
+<!--
+<script>
+    var cb = function () {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = '{{ site.baseurl }}public/css/styles.min.css';
+        var h = document.getElementsByTagName('head')[0];
+        h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script> -->
 
-  </body>
+</body>
 </html>
