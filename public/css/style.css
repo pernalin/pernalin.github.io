@@ -1,11 +1,3 @@
-html {
-    font-family: "source-sans-pro", sans-serif !important;
-}
-
-.sidebar-about h1 {
-    font-family: "source-sans-pro", sans-serif !important;
-}
-
 @font-face {
     font-family: 'Modern-UI-Icons---Social';
     src: url('/public/fonts/Modern-UI-Icons---Social.eot');
