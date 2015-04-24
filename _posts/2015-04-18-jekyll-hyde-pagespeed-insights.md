@@ -72,7 +72,7 @@ links. So adding some padding sorted it out.
 ### Leverage browser caching
 
 This was the only issue I couldn't fix.  My site is hosted on Github Pages, and at this point it's not possible to 
-configure Github Pages for browser cacheing.
+configure Github Pages for ctbrowser cacheing.
 
 ### The Final results
 
