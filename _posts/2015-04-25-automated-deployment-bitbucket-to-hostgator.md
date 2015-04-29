@@ -56,18 +56,17 @@ You can use git or hg to connect to Bitbucket. Shell access is disabled.
 
 ### Pull Code to HostGator 
 
-The good news is git is already available on Hostgator by default.  The approach you take to pull your source code to
- your hosting site depends on whether you're pulling it in to a subfolder or directly under the root.  In either case
-  you'll need to get the path to the branch you want to pull.
+The good news is git is already available on Hostgator by default.  How you pull your code for the first time 
+depends on whether you're pulling it into an existing folder (such as the root folder) or pulling it in to a new 
+subfolder. In either case you'll need to have the bitbucket SSH path to your source handy.
  
 If you're pulling code to a subfolder, just clone your repository and you're good to go to the next step.
 {% highlight console %}
 [~]# git clone git@bitbucket.org:<username>/<repositoryname>.git
 {% endhighlight %}
 
-Instead of the above, if you wish to pull the repository directly under the root folder, the above command will give 
-you an error saying that the `destination path already exists and is not an empty directory`In 
-that case do the following
+Instead, if you're pulling your code to an existing folder such as the root folder, the above command errors out 
+with a message that the `destination path already exists and is not an empty directory`. So, do the following
 
 {% highlight console %}
 [~]# git init
@@ -75,16 +74,16 @@ that case do the following
 [~]# git fetch
 {% endhighlight %}
 
-After the initial clone / fetch, you should be able to pull your code using the following
+After the initial clone / fetch, you should be able to pull your code manually using the following
 {% highlight console %}
 [~]# git pull git@bitbucket.org:<username>/<repositoryname>.git
 {% endhighlight %}
 
 ### Automate the process
 
-Create a php file, git-hook.php, on your hosting site with the following code. Note that the `exec(`git pull ... )` 
-command is exactly the same command you used above to pull the code manually.  The echo statements don't really 
-matter.  This will run as an automated process and you won't actually see the output unless you manually run the PHP 
+Create a new php file, git-hook.php, on your hosting site with the code below. Note that the `exec('git pull ... ')` 
+command contains the same command that you used above to pull the code manually. Also note that the echo 
+statements below don't really matter.  You won't actually see any output unless you manually run the PHP 
 code.  So, the only code you really need is the exec statement.
 
 {% highlight php %}
@@ -97,8 +96,9 @@ foreach ($output as $o) {
 echo "End: Pull code from BitBucket<br/>";
 {% endhighlight %}
 
-Then go back to BitBucket's setting for that repository and click on 'Hooks', then select 'POST' from the drop down 
-and click on 'Add Hook'.  In the form that appears type in the URL to the PHP file you created above and click 'Save'.
+Once this file has been saved on HostGator, go back to the Settings page of your BitBucket repository and click
+ on 'Hooks'. Then select 'POST' from the drop down and click on 'Add Hook'.  In the form that appears type in the URL
+  to the PHP file you created above and click 'Save'.
 
 ### Verify the automated deployment process
 Now try pushing a change to your repository. Within a few seconds your changes should now be visible (automatically) 
