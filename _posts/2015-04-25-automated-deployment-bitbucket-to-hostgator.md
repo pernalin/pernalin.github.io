@@ -3,14 +3,15 @@ layout: post
 title: Automated deployment from BitBucket to Hostgator
 ---
 
-Long ago when I was looking for a good hosted Distributed Version Control System (DVCS) it came down to two options; 
-GitHub or BitBucket.  I went with Bitbucket because they provided free private repositories.
+Long ago when I was looking for a good hosted Distributed Version Control System (DVCS), it came down to two options; 
+GitHub or BitBucket.  Of the two, I chose Bitbucket primarily because they provided free private repositories.
 
-This guide describes how to setup an automated deployment workflow from BitBucket to Hostgator.
+This post describes how to setup an automated deployment workflow from BitBucket to Hostgator.
 
-### SSH in to Hostgator
-Use an SSH client such as Putty (if you're on Windows) to connect to your Hostgator terminal. Do the following to 
-generate a public key. You'll need this key later on to enable the connection between BitBucket and HostGator.
+### SSH to your Hostgator terminal
+Use a SSH client such as PuTTY (if you're on Windows) to connect to your Hostgator terminal. Enter the commands 
+below to create a `ssh` folder and generate a public key. You'll need this key later on to enable the connection 
+between BitBucket and HostGator.
 
 {% highlight console %}
 [~]# mkdir ~/.ssh
@@ -19,10 +20,10 @@ generate a public key. You'll need this key later on to enable the connection be
 [~]# ssh-keygen
 {% endhighlight %}  
 
-Once you enter ssh-keygen, you'll be prompted for a passphrase. You could enter a phrase, or just leave it blank. In 
-the end this will create a set of public/private keys in the .ssh directory.
+Once you enter `ssh-keygen`, you'll be prompted for a pass phrase. You could either enter a phrase, or just leave it 
+blank and hit enter. Once this command runs, it will create a set of public/private keys in the .ssh directory.
 
-Copy the public key from id_rsa.pub.  One way to do this is to output the content of this file within Putty, 
+Copy the public key from id_rsa.pub.  One way to do this is to output the content of this file within PuTTY, 
 selecting that output and right-clicking to copy to the clipboard.
 
 {% highlight console %}
@@ -32,8 +33,8 @@ selecting that output and right-clicking to copy to the clipboard.
 ### Add the public key to BitBucket
 Log in to BitBucket and go to the 'Manage Account' screen.  Then select 'SSH Keys' and 'Add key'.
 
-Enter in some name for your SSH Key, and paste in your public key (that you obtained above), and save it by clicking 
-'Add key'.
+Enter a name for your SSH Key, and paste your public key (that key you obtained above), and save it by 
+clicking 'Add key'.
 
 ### Verify connectivity
 Go back to your PuTTY session. Run the following command to verify connectivity between BitBucket and Hostgator
@@ -41,8 +42,8 @@ Go back to your PuTTY session. Run the following command to verify connectivity 
 [~]# ssh -T git@bitbucket.org
 {% endhighlight %}  
 
-You may be prompted with an `Are you sure you want to continue connecting` message. If so, type in `yes`. If all goes 
-well, you should see a message similar to the following
+You may be prompted with an "Are you sure you want to continue connecting" message. If so, type in "yes" to continue. If all goes 
+well, you should see a message similar to the following.
 
 {% highlight console %}
 The authenticity of host 'bitbucket.org (XXX)' can't be established.
