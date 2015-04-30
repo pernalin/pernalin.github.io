@@ -50,7 +50,7 @@ While this fixed the original issue (optimizing css delivery) it introduced anot
  analysis *before* the asynchronously loaded css is available. So, it reported several new 'user experience' issues
  . The issues it reported were clearly fixed in the live site, but I was after the 
  perfect score. So I ended up with an ugly hack by inlining a few CSS snippets within the page template `\_includes\head
- .html` to address the new issues reported by Pagespeed Insights.
+.html` to address the new issues reported by Pagespeed Insights.
  
 ### Minifying CSS
 
