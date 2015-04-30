@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automated deployment from BitBucket to Hostgator
+title: Automated Code Deployment from BitBucket to Hostgator
 ---
 
 Long ago when I was looking for a good hosted Distributed Version Control System (DVCS), it came down to two options; 
@@ -102,5 +102,5 @@ Once this file has been saved on HostGator, go back to the Settings page of your
   to the PHP file you created above and click 'Save'.
 
 ### Verify the automated deployment process
-Now try pushing a change to your repository. Within a few seconds your changes should now be visible (automatically) 
+Now try pushing a change to your repository. Within a few seconds your changes should now be automatically visible 
 on the live site!
