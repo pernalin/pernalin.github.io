@@ -415,7 +415,6 @@ you can use the generic selector below, but it's slower:
 }
 
 textarea {
-    font-family: "source-sans-pro", sans-serif;
     height: 150px;
     line-height: 22px;
     resize: vertical;

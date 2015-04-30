@@ -29,6 +29,8 @@
 
 body {
     font-family: "source-sans-pro", "PT Sans", Helvetica, Arial, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media (min-width: 38em) {
@@ -359,7 +361,6 @@ tbody tr:nth-child(odd) th {
     overflow: hidden; /* clearfix */
     margin-left: -1rem;
     margin-right: -1rem;
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
     color: #ccc;
     text-align: center;
 }
