@@ -28,7 +28,7 @@
  */
 
 body {
-    font-family: "source-sans-pro", "PT Sans", Helvetica, Arial, sans-serif;
+    font-family: "source-sans-pro", "PT Sans", Helvetica, Arial, sans-serif !important;
 }
 
 @media (min-width: 38em) {
@@ -138,7 +138,6 @@ pre {
     padding: 1rem;
     font-size: .8rem;
     line-height: 1.4;
-    white-space: pre;
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;
@@ -256,18 +255,6 @@ tbody tr:nth-child(odd) th {
     padding: 1rem;
     color: #717171;
     background-color: #f9f9f9;
-}
-
-/*
- * Container
- *
- * Center the page content.
- */
-
-.container {
-    max-width: 38rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 /*
